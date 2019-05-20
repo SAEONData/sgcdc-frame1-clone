@@ -1,0 +1,494 @@
+{
+  "formatVersion": 3,
+  "id": "root",
+  "ideas": {
+    "1": {
+      "title": "NavBar",
+      "id": 1,
+      "attr": {
+        "position": [
+          -1156,
+          -935,
+          1
+        ],
+        "style": {
+          "background": "#3366FF"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Logo",
+          "id": "5.137b.610236dcc-c9b6.4cc16d678",
+          "ideas": {
+            "1": {
+              "title": " https://drive.google.com/open?id=0ByxQT6Sr1O7ZdGVRMHZzWXYtaTFDU0g4czF1VENMNXRHTWhN",
+              "id": "23.137b.610236dcc-c9b6.4cc16d678"
+            }
+          },
+          "attr": {
+            "style": {
+              "background": "#3366FF"
+            }
+          }
+        },
+        "11": {
+          "title": "Menu",
+          "id": "6.137b.610236dcc-c9b6.4cc16d678",
+          "attr": {
+            "position": [
+              97,
+              55.80000001192093,
+              1
+            ],
+            "style": {
+              "background": "#3366FF"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "Home",
+              "id": "7.137b.610236dcc-c9b6.4cc16d678",
+              "attr": {
+                "link": "Home",
+                "note": {
+                  "index": 5,
+                  "text": "{\r\n\t\"title\": \"Home\",\r\n\t\"icon\": \"fa fa-home\",\r\n        \"tooltip\": \"Home\"\n}"
+                } 
+              }
+            },
+            "2": {
+              "title": "Glossary",
+              "id": "8.137b.610236dcc-c9b6.4cc112378",
+              "attr": {
+                "link": "Glossary",
+                "note": {
+                  "index": 6,
+                  "text": "{\r\n\t\"title\": \"Services\",\r\n\t\"icon\": \"fa fa-cog\",\r\n        \"tooltip\": \"Services\"\r\n}"
+                }
+              }
+            },
+            "3": {
+              "title": "About",
+              "id": "9.137b.610236dcc-c9b6.756c16d678",
+              "attr": {
+                "link": "About",
+                "note": {
+                  "index": 7,
+                  "text": "{\r\n\t\"title\": \"Products\",\r\n\t\"icon\": \"fa fa-archive\",\r\n        \"tooltip\": \"Products\"\r\n}"
+                }
+              }
+            },
+            "4": {
+              "title": "T & C's",
+              "id": "9.137b.610236dcc-c9b6.987678",
+              "attr": {
+                "link": "TermsConditions",
+                "note": {
+                  "index": 7,
+                  "text": "{\r\n\t\"title\": \"Products\",\r\n\t\"icon\": \"fa fa-archive\",\r\n        \"tooltip\": \"Products\"\r\n}"
+                }
+              }
+            },
+            "5": {
+              "title": "Data Guidence",
+              "id": "9.137b.610236dcc-c9b6.sdfe56763",
+              "attr": {
+                "link": "DataGuidence",
+                "note": {
+                  "index": 7,
+                  "text": "{\r\n\t\"title\": \"Products\",\r\n\t\"icon\": \"fa fa-archive\",\r\n        \"tooltip\": \"Products\"\r\n}"
+                }
+              }
+            },
+            "6": {
+              "title": "Contact",
+              "id": "9.137b.610236dcc-awer.4cc16d678",
+              "attr": {
+                "link": "Contact",
+                "note": {
+                  "index": 7,
+                  "text": "{\r\n\t\"title\": \"Products\",\r\n\t\"icon\": \"fa fa-archive\",\r\n        \"tooltip\": \"Products\"\r\n}"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "2": {
+      "title": "Footer",
+      "id": "2.137b.610236dcc-c9b6.4cc16d678",
+      "attr": {
+        "position": [
+          -1211,
+          515,
+          1
+        ],
+        "style": {
+          "background": "#0000FF"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Technology",
+          "id": "14.137b.610236dcc-c9b6.4cc16d678",
+          "attr": {
+            "note": {
+              "index": 11,
+              "text": "The DST funds the SAEON Open Data Platform (ODP) and associated dissemination portals. Developed by SAEON on behalf of DST, DEA, and other stakeholders."
+            }
+          }
+        },
+        "2": {
+          "title": "SAEON ODP",
+          "id": "17.137b.610236dcc-c9b6.4cc16d678"
+        },
+        "12": {
+          "title": "Funding",
+          "id": "21.137b.610236dcc-c9b6.4cc16d678",
+          "attr": {
+            "position": [
+              114.79998779296875,
+              152.5999984741211,
+              1
+            ]
+          },
+          "ideas": {
+            "1": {
+              "title": "https://drive.google.com/open?id=0B18ulA7MmoWOcTQ0SkhIRDBVU3c",
+              "id": "22.137b.610236dcc-c9b6.4cc16d678"
+            }
+          }
+        },
+        "1.5": {
+          "title": "Legal",
+          "id": "16.137b.610236dcc-c9b6.4cc16d678",
+          "ideas": {
+            "1": {
+              "title": "Disclaimer http://noframe.media.dirisa.org/wiki-1/disclaimer",
+              "id": "18.137b.610236dcc-c9b6.4cc16d678"
+            },
+            "2": {
+              "title": "Privacy http://noframe.media.dirisa.org/wiki-1/privacy-statement",
+              "id": "19.137b.610236dcc-c9b6.4cc16d678"
+            },
+            "3": {
+              "title": "Conditions of Use http://noframe.media.dirisa.org/wiki-1/conditions-of-use",
+              "id": "20.137b.610236dcc-c9b6.4cc16d678"
+            }
+          }
+        }
+      }
+    },
+    "3": {
+      "title": "SideNav",
+      "id": "3.137b.610236dcc-c9b6.4cc16d678",
+      "attr": {
+        "position": [
+          -1223,
+          -10,
+          1
+        ],
+        "style": {
+          "background": "#0000FF"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "SARVA",
+          "id": "40.5661.e19774766-e780.6e09bd81a",
+          "ideas": {
+            "1": {
+              "title": "Using SARVA",
+              "id": "47.5661.e19774766-e780.6e09bd81a",
+              "attr": {
+                "note": {
+                  "index": 22,
+                  "text": "{\r\n\t\"title\": \"Using SARVA\",\r\n\t\"text\": \"We assist planners and decision-makers by making data available for analysis and exploration, and allowing these datasets to be downloaded with standardised metadata included. This allows planners, service providers, and decision support analysts to include the best available data in their work. The only requirement is to cite data sources properly. Assisting with assessment of Impact Profiles: Our new Impact Profiler is the first in a series of tools developed to assist local and district municipalities with repeatable, ranked assessments of the relative importance of current and future hazards. We believe that planning under conditions of resource constraints will not be properly done without such ranking. The impact assessment tool will be followed in due course by tools for ranking of Vulnerability and Risk. Linking Mitigation and Adaptation actions and projects to these impacts: We need to link concrete actions to the hazards that we face - short, medium, and long term. To do so, we need to understand what options are available to us, and what has already been done. Too often, mitigation and adaptation options are generalised and not necessarily applicable in the SOuth African context or n a region of interest. SAEON is finalising work on a revamped National Climate Chnage Response Database (NCCRD), which will combione information contrionuted by local authorieties, reneable energy licenses awarded by NERSA, feasible renewable energy options contributed by the BioEnergy Atlas, and funding opportunities from the donor community in an attempt to improve the applicability and precision with which mitigation and adaptation actions are planned.\",\r\n        \"tooltip\": \"Sarva tooltip test\"\r,\n        \"type\": \"modal\"\n}"
+                },
+                "position": [
+                  464,
+                  -45,
+                  2
+                ]
+              },
+              "ideas": {}
+            },
+            "3": {
+              "title": "Atlas",
+              "id": "50.5661.e19774766-e780.6e09bd81a",
+              "attr": {
+                "note": {
+                  "index": 24,
+                  "text": "{\r\n\t\"title\": \"Atlas\",\r\n\t\"text\": \"\",\r\n        \"tooltip\": \"Profiler\"\r,\r\n        \"type\": \"content\",\r\n        \"path\": \"Updated,InteractiveTools\"\r\n}"
+                },
+                "position": [
+                  474,
+                  -10,
+                  3
+                ]
+              }
+            },
+            "4": {
+              "title": "Finding Data",
+              "id": "51.5661.e19774766-e780.6e09bd81a",
+              "attr": {
+                "note": {
+                  "index": 25,
+                  "text": "{\r\n\t\"title\": \"Finding Data\",\r\n\t\"text\": \"\",\r\n        \"tooltip\": \"Profiler\"\r,\r\n        \"type\": \"tab\",\r\n        \"link\": \"http://www.sasdi.net/search.aspx?anytext=energy\"\r\n}"
+                },
+                "position": [
+                  449,
+                  47,
+                  4
+                ],
+                "style": {
+                  "width": 78.5625
+                }
+              }
+            },
+            "0.5": {
+              "title": "Profiler",
+              "id": "49.5661.e19774766-e780.6e09bd81a",
+              "attr": {
+                "note": {
+                  "index": 23,
+                  "text": "{\r\n\t\"title\": \"Using SARVA\",\r\n\t\"text\": \"\",\r\n        \"tooltip\": \"Profiler\"\r,\r\n        \"type\": \"content\",\n        \"link\": \"http://www.sasdi.net/search.aspx?anytext=energy&noframe=true\"\r\n}"
+                },
+                "position": [
+                  499.3333282470703,
+                  -90.66668701171875,
+                  1
+                ]
+              }
+            }
+          },
+          "attr": {
+            "note": {
+              "index": 21,
+              "text": "{\r\n\t\"title\": \"SARVA\",\r\n\t\"icon\": \"fa fa-home\",\n        \"tooltip\": \"Sarva tooltip test\"\r\n}"
+            }
+          }
+        },
+        "11": {
+          "title": "Global Change",
+          "id": "42.5661.e19774766-e780.6e09bd81a",
+          "attr": {
+            "note": {
+              "index": 26,
+              "text": "{\r\n\t\"title\": \"Global Change\",\r\n\t\"icon\": \"fa fa-globe\",\r\n\t\"tooltip\": \"Global Change tooltip\"\r\n}"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "Semantic Framework",
+              "id": "52.5661.e19774766-e780.6e09bd81a"
+            },
+            "2": {
+              "title": "Data and Evidence",
+              "id": "53.5661.e19774766-e780.6e09bd81a"
+            },
+            "3": {
+              "title": "Work Programme",
+              "id": "54.5661.e19774766-e780.6e09bd81a"
+            }
+          }
+        },
+        "21": {
+          "title": "Linked Systems",
+          "id": "44.5661.e19774766-e780.6e09bd81a",
+          "attr": {
+            "note": {
+              "index": 30,
+              "text": "{\n        \"title\": \"Linked System\",\r\n\t\"text\": \"Standardised, distributed services that can be anywhere in the web - based on OGC standards.\",\r\n\t\"icon\": \"fa fa-laptop\",\r\n\t\"subtext\": {\r\n\t\t\t\t\"value\": \"1,800\",\r\n\t\t\t\t\"unit\": \"open data layers\"\r\n\t\t\t }\r\n}"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "NCCRD",
+              "id": "55.5661.e19774766-e780.6e09bd81a"
+            },
+            "2": {
+              "title": "Events and Disasters",
+              "id": "56.5661.e19774766-e780.6e09bd81a"
+            }
+          }
+        },
+        "31": {
+          "title": "Archive",
+          "id": "46.5661.e19774766-e780.6e09bd81a",
+          "attr": {
+            "position": [
+              81.66665649414062,
+              247.33331298828125,
+              1
+            ],
+            "note": {
+              "index": 33,
+              "text": "{\r\n        \"title\": \"Archive\",\r\n\t\"text\": \"Standardised, distributed services that can be anywhere in the web - based on OGC standards.\",\r\n\t\"icon\": \"fa fa-folder-open\",\r\n\t\"subtext\": {\r\n\t\t\t\t\"value\": \"1,800\",\r\n\t\t\t\t\"unit\": \"open data layers\"\r\n\t\t\t }\r\n}"
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "SAWS Climate Atlas",
+              "id": "57.5661.e19774766-e780.6e09bd81a"
+            },
+            "2": {
+              "title": "Atlas of Agrohydrology",
+              "id": "58.5661.e19774766-e780.6e09bd81a"
+            },
+            "3": {
+              "title": "SARVA 2.0",
+              "id": "59.5661.e19774766-e780.6e09bd81a"
+            },
+            "4": {
+              "title": "SARVA 1.0",
+              "id": "60.5661.e19774766-e780.6e09bd81a"
+            },
+            "5": {
+              "title": "Reading Risk",
+              "id": "61.5661.e19774766-e780.6e09bd81a"
+            }
+          }
+        }
+      }
+    },
+    "4": {
+      "title": "Content",
+      "id": "4.137b.610236dcc-c9b6.4cc16d678",
+      "attr": {
+        "position": [
+          -1209,
+          -579,
+          1
+        ],
+        "style": {
+          "background": "#0000FF"
+        }
+      },
+      "ideas": {
+        "1": {
+          "title": "Updated, Interactive Tools",
+          "id": "26.5661.e19774766-e780.6e09bd81a",
+          "attr": {
+            "note": {
+              "index": 22,
+              "text": "Updated, Interactive Tools are now available for detailed assessment of the impact of pressures and drivers on important human, physical, and environmental assets. These tools are currently focused on Impact Assessment, but will in time extend to allow determination of Risk and Vulnerability"
+            },
+            "position": [
+              81,
+              -120,
+              2
+            ]
+          }
+        },
+        "11": {
+          "title": "Distributed, High Resolution Data",
+          "id": "27.5661.e19774766-e780.6e09bd81a",
+          "attr": {
+            "note": {
+              "index": 23,
+              "text": "Distributed, high-resolution data can be annotated and linked from any standardised service in the web and included into our profiling and impact assessment tools. Very large datasets can be accommodated without deterioration in service - thanks to an innovative distributed data processing breakthrough."
+            }
+          },
+          "ideas": {
+            "1": {
+              "title": "Read More",
+              "id": "29.5661.e19774766-e780.6e09bd81a"
+            }
+          }
+        },
+        "21": {
+          "title": "Widgets",
+          "id": "32.5661.e19774766-e780.6e09bd81a",
+          "attr": {
+            "position": [
+              89,
+              103,
+              1
+            ]
+          },
+          "ideas": {
+            "1": {
+              "title": "Search and Discover Resources",
+              "id": "33.5661.e19774766-e780.6e09bd81a",
+              "ideas": {
+                "1": {
+                  "title": "Search",
+                  "id": "37.5661.e19774766-e780.6e09bd81a"
+                }
+              },
+              "attr": {
+                "note": {
+                  "index": 26,
+                  "text": "Use simple or advanced tools to search for data meeting your criteria."
+                },
+                "style": {
+                  "width": 145
+                }
+              }
+            },
+            "2": {
+              "title": "Explore Available Resources by Sector or Theme",
+              "id": "35.5661.e19774766-e780.6e09bd81a",
+              "attr": {
+                "note": {
+                  "index": 27,
+                  "text": "Browse, preview, and access data and narratives in popular collections and in common themes."
+                }
+              },
+              "ideas": {
+                "1": {
+                  "title": "Themes",
+                  "id": "38.5661.e19774766-e780.6e09bd81a"
+                }
+              }
+            },
+            "3": {
+              "title": "Tell Us About Your Area of Interest",
+              "id": "36.5661.e19774766-e780.6e09bd81a",
+              "attr": {
+                "note": {
+                  "index": 28,
+                  "text": "Register as a user and contribute data, assessments, and media."
+                }
+              },
+              "ideas": {
+                "1": {
+                  "title": "Contribute",
+                  "id": "39.5661.e19774766-e780.6e09bd81a"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "title": "NavBar",
+  "links": [
+    {
+      "ideaIdFrom": "50.5661.e19774766-e780.6e09bd81a",
+      "ideaIdTo": "27.5661.e19774766-e780.6e09bd81a",
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed",
+          "arrow": "to",
+          "label": ""
+        }
+      }
+    },
+    {
+      "ideaIdFrom": "49.5661.e19774766-e780.6e09bd81a",
+      "ideaIdTo": "26.5661.e19774766-e780.6e09bd81a",
+      "attr": {
+        "style": {
+          "color": "#FF0000",
+          "lineStyle": "dashed",
+          "arrow": "to"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version|0.19t|$
+Arch|x86_64-msvc|$
+
+[PLUGINS]
+NPSWF64_31_0_0_122.dll|$
+C:\WINDOWS\system32\Macromed\Flash\NPSWF64_31_0_0_122.dll|$
+31.0.0.122|$
+1539463017530|0|0|0|0|$
+Shockwave Flash 31.0 r0|$
+Shockwave Flash|$
+2
+0|application/x-shockwave-flash|Adobe Flash movie|swf|$
+1|application/futuresplash|FutureSplash movie|spl|$
+
+[INVALID]
+C:\Program Files (x86)\Adobe\Adobe Creative Cloud\Utils\npAdobeAAMDetect32.dll|$
+1529640802000|$
+C:\Program Files (x86)\Adobe\Adobe Creative Cloud\Utils\npAdobeAAMDetect64.dll|$
+1529640802000|$
