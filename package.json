@@ -4,16 +4,20 @@
   "private": true,
   "proxy": "http://localhost:3000/",
   "dependencies": {
+    "@saeon/saeon-ux": "^1.1.14",
     "@trendmicro/react-sidenav": "^0.4.5",
     "@trendmicro/react-tooltip": "^0.6.0",
     "mdbreact": "^4.8.5-patch.1",
-    "react": "^16.7.0",
+    "react": "^16.8.6",
     "react-bootstrap": "^0.32.4",
     "react-burger-menu": "^2.5.4",
-    "react-dom": "^16.6.3",
+    "react-dom": "^16.8.6",
+    "react-hooks": "^1.0.1",
+    "react-hooks-fetch": "^0.10.0",
     "react-redux": "^7.0.3",
     "react-responsive-modal": "^3.5.1",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "redux": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Suspense } from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
 import './CustomCSS.css'; 
@@ -6,6 +6,9 @@ import * as parsedData from './JSON_Dat.json';
 import SideNav, { NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import { Button, Modal, ModalBody, ModalHeader, ModalFooter } from 'mdbreact';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
+
+import DynamicFooter from './components/DynamicFooter'
+import FetchData from './components/FetchData'
 
 import { Tooltip } from '@trendmicro/react-tooltip';
 import '@trendmicro/react-tooltip/dist/react-tooltip.css';
@@ -19,6 +22,7 @@ import TermsConditions from './TermsConditions';
 import Contact from './Contact';
 import Glossary from './Glossary';
 import About from './About';
+
 
 class App extends Component { 
 
@@ -983,100 +987,114 @@ ContentWidgets = (Content) => {
   }
 }
 
-FooterFunc = () => { 
-
-  const children = [] 
-  var FooterStyle //= { 'padding-left': '1%', 'padding-right': '1%' }
-  var cardTitle
-  var cardSub 
-
-  for (let x in parsedData.default.ideas) {
-    for (let y in parsedData.default.ideas[x])
-    { 
-      if (parsedData.default.ideas[x][y] === "Footer") 
-      {
-        FooterStyle = this.BuildStyleVar(parsedData.default.ideas[x])
-        if(parsedData.default.ideas[x].ideas !== "undefined")
-        {
-          for (let z in parsedData.default.ideas[x].ideas)
-          {
-
-            cardTitle = "";
-            cardSub = "";
-            var type = false;
-            var linkList = []
-
-            for (let r in parsedData.default.ideas[x].ideas[z]) {
-              if (r === "title") {
-                cardTitle = parsedData.default.ideas[x].ideas[z][r];
-              }
-              else if (r === "attr") {
-                for (let t in parsedData.default.ideas[x].ideas[z][r]) {
-                  for (let u in parsedData.default.ideas[x].ideas[z][r][t]) {
-                    if (u === "text") {
-                      cardSub = <p className="white-text light"> { parsedData.default.ideas[x].ideas[z][r][t][u] } </p>
-                    } 
-                  }
-                }
-              }
-              else if (r === "ideas") {
-                var link = ""
-                for (let t in parsedData.default.ideas[x].ideas[z][r]) {
-                  //Check link type here and determine if its a logo or something
-                  link = (this.extractLink(parsedData.default.ideas[x].ideas[z][r][t].title));
-                  
-                  if (this.isImage(link)) { //If it is an image, or more accurately it is a google drive doc
-                    cardSub = <img src={ link.replace("open", "uc") } alt="img not loaded"></img>
-                  } 
-                  else { //If it is not a google drive link
-                    type = true;
-
-                    const ModalId = '#' + parsedData.default.ideas[x].ideas[z][r][t].id.replace(/\s/g, '');
-                    
-                    // while (ModalId.indexOf('.') !== 0) {
-                    //   //ModalId = ModalId.replace('.','');
-                    //   alert(ModalId.indexOf('.'))
-                    //   ModalId = ModalId.slice(ModalId.indexOf('.'), ModalId.indexOf('.') + 1);
-                    // }
-
-                    
-
-                    linkList.push(<div>
-                                    <li key={ parsedData.default.ideas[x].ideas[z][r][t].id }>
-                                      <a className="white-text light" href="https://#" onClick={ () => this.toggle(ModalId)}>
-                                        { parsedData.default.ideas[x].ideas[z][r][t].title.split("http")[0] }
-                                      </a>
-                                    </li>
-                                    { this.iFrameModal("", link, ModalId) }
-                                  </div>)
-                  }
-                }
-              }
-            }
-            if (type) {
-              children.push(<div className="col l3 s12" key={ parsedData.default.ideas[x].ideas[z].id + x.toString() }>
-                              <h5 className="white-text light"> { cardTitle } </h5>
-                              <ul>{ linkList }</ul>
-                            </div>)
-            }
-            else {
-            children.push(<div className="col l3 s12" key={ parsedData.default.ideas[x].ideas[z].id + x.toString() }>
-                            <h5 className="white-text light"> { cardTitle } </h5>
-                            { cardSub }
-                          </div>)
-            }
-          }
-        }
-      }
-    }
-  } 
-
-  return <footer className="page-footer font-small indigo" style={ FooterStyle }>
-            <div className="row" style={{ marginLeft: "15px"}}>
-              {children}
-            </div>
-          </footer> 
+FooterFunc = () => {
+  return <Suspense fallback={<span>...loadingandloadingandloading</span>}>
+           
+           <DynamicFooter />
+           
+         </Suspense>
+         
 }
+
+// FooterFunc = () => { 
+
+//   const children = [] 
+//   var FooterStyle //= { 'padding-left': '1%', 'padding-right': '1%' }
+//   var cardTitle
+//   var cardSub 
+
+//   for (let x in parsedData.default.ideas) {
+//     for (let y in parsedData.default.ideas[x])
+//     { 
+//       if (parsedData.default.ideas[x][y] === "Footer") 
+//       {
+//         FooterStyle = this.BuildStyleVar(parsedData.default.ideas[x])
+//         if(parsedData.default.ideas[x].ideas !== "undefined")
+//         {
+//           for (let z in parsedData.default.ideas[x].ideas)
+//           {
+
+//             cardTitle = "";
+//             cardSub = "";
+//             var type = false;
+//             var linkList = []
+
+//             for (let r in parsedData.default.ideas[x].ideas[z]) {
+//               if (r === "title") {
+//                 cardTitle = parsedData.default.ideas[x].ideas[z][r];
+//               }
+//               else if (r === "attr") {
+//                 for (let t in parsedData.default.ideas[x].ideas[z][r]) {
+//                   for (let u in parsedData.default.ideas[x].ideas[z][r][t]) {
+//                     if (u === "text") {
+//                       cardSub = <p className="white-text light"> { parsedData.default.ideas[x].ideas[z][r][t][u] } </p>
+//                     } 
+//                   }
+//                 }
+//               }
+//               else if (r === "ideas") {
+//                 var link = ""
+//                 for (let t in parsedData.default.ideas[x].ideas[z][r]) {
+//                   //Check link type here and determine if its a logo or something
+//                   link = (this.extractLink(parsedData.default.ideas[x].ideas[z][r][t].title));
+                  
+//                   if (this.isImage(link)) { //If it is an image, or more accurately it is a google drive doc
+//                     cardSub = <img src={ link.replace("open", "uc") } alt="img not loaded"></img>
+//                   } 
+//                   else { //If it is not a google drive link
+//                     type = true;
+
+//                     const ModalId = '#' + parsedData.default.ideas[x].ideas[z][r][t].id.replace(/\s/g, '');
+                    
+//                     // while (ModalId.indexOf('.') !== 0) {
+//                     //   //ModalId = ModalId.replace('.','');
+//                     //   alert(ModalId.indexOf('.'))
+//                     //   ModalId = ModalId.slice(ModalId.indexOf('.'), ModalId.indexOf('.') + 1);
+//                     // }
+
+                    
+
+//                     linkList.push(<div>
+//                                     <li key={ parsedData.default.ideas[x].ideas[z][r][t].id }>
+//                                       <a className="white-text light" href="https://#" onClick={ () => this.toggle(ModalId)}>
+//                                         { parsedData.default.ideas[x].ideas[z][r][t].title.split("http")[0] }
+//                                       </a>
+//                                     </li>
+//                                     { this.iFrameModal("", link, ModalId) }
+//                                   </div>)
+//                   }
+//                 }
+//               }
+//             }
+//             if (type) {
+//               children.push(<div className="col l3 s12" key={ parsedData.default.ideas[x].ideas[z].id + x.toString() }>
+//                               <h5 className="white-text light"> { cardTitle } </h5>
+//                               <ul>{ linkList }</ul>
+//                             </div>)
+//             }
+//             else {
+//             children.push(<div className="col l3 s12" key={ parsedData.default.ideas[x].ideas[z].id + x.toString() }>
+//                             <h5 className="white-text light"> { cardTitle } </h5>
+//                             { cardSub }
+//                           </div>)
+//             }
+//           }
+//         }
+//       }
+//     }
+//   } 
+
+//   return <footer className="page-footer font-small indigo" style={ FooterStyle }>
+//             <div className="row" style={{ marginLeft: "15px"}}>
+//               {children}
+//             </div>
+//             <Suspense fallback={<span>loading..</span>}>
+//              <FetchData />
+//             </Suspense>
+            
+//           </footer> 
+          
+// }
  
 render() {
     var modal = document.getElementById('searchiFrame');
