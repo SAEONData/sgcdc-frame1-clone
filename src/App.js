@@ -8,7 +8,6 @@ import { Button, Modal, ModalBody, ModalHeader, ModalFooter } from 'mdbreact';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 
 import DynamicFooter from './components/DynamicFooter'
-import FetchData from './components/FetchData'
 
 import { Tooltip } from '@trendmicro/react-tooltip';
 import '@trendmicro/react-tooltip/dist/react-tooltip.css';
@@ -989,9 +988,7 @@ ContentWidgets = (Content) => {
 
 FooterFunc = () => {
   return <Suspense fallback={<span>...loadingandloadingandloading</span>}>
-           
            <DynamicFooter />
-           
          </Suspense>
          
 }

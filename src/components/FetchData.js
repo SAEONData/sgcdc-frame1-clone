@@ -8,16 +8,13 @@ const FetchData = () => {
   const { error, data } = useFetch(url)
   if (error) return <Err error={error} />
   if (!data) return null
-  console.log(data)
+
   
   return (
     <Suspense fallback={<span>loading..</span>}>
        <span> {data.map((data) => data.title)} </span>
     </Suspense>
-   
   )
-
 }
-
 
 export default FetchData
