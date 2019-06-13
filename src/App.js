@@ -7,7 +7,8 @@ import SideNav, { NavItem, NavIcon, NavText } from '@trendmicro/react-sidenav';
 import { Button, Modal, ModalBody, ModalHeader, ModalFooter } from 'mdbreact';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 
-import DynamicFooter from './components/DynamicFooter'
+import DynamicFooter from './components/footer/DynamicFooter'
+import ModalView from './components/modal/ModalView'
 
 import { Tooltip } from '@trendmicro/react-tooltip';
 import '@trendmicro/react-tooltip/dist/react-tooltip.css';
@@ -988,6 +989,7 @@ ContentWidgets = (Content) => {
 
 FooterFunc = () => {
   return <Suspense fallback={<span>...loadingandloadingandloading</span>}>
+    
            <DynamicFooter />
          </Suspense>
          

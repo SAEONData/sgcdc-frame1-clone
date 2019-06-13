@@ -48,6 +48,7 @@ nav.nav-extended .nav-wrapper {
   position: fixed;
   top: 12px;
   padding: 12px;
-  background-color: white;
+  background-color: black;
   border: 1px solid grey;
+  box-shadow: none;
 }
