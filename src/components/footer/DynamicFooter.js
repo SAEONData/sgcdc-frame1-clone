@@ -38,7 +38,10 @@ const Err = ({ error }) => <span>Error:{error.message}</span>
 // instantiate fetch hook to get data from server
 const DynamicFooter = () => {
   
+  // prod server
   const url = 'http://sgcdc.saeon.ac.za:8081/spreadsheet'
+  // localhost
+  // const url = 'http://localhost:8081/spreadsheet'
   const { error, data } = useFetch(url)
   if (error) return <Err error={error} />
   if (!data) return null
