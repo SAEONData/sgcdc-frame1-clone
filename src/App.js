@@ -8,7 +8,6 @@ import { Button, Modal, ModalBody, ModalHeader, ModalFooter } from 'mdbreact';
 import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 
 import DynamicFooter from './components/footer/DynamicFooter'
-import ModalView from './components/modal/ModalView'
 
 import { Tooltip } from '@trendmicro/react-tooltip';
 import '@trendmicro/react-tooltip/dist/react-tooltip.css';
